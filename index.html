@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Donut Clicker Game</title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+  <header>
+    <h1>Donut Clicker Game</h1>
+    <nav>
+      <ul>
+        <li><a href="#" class="header-link">Fred the Baker Baking Company</a>
+          <div class="dropdown-content">
+            <p>Fred the Baker Baking Company is known for its delicious donuts!</p>
+          </div>
+        </li>
+        <li>
+            <a href="https://orteil.dashnet.org/cookieclicker/" target="_blank">Cookie Clicker</a>
+        </li>
+        <li><a href="#" onclick="openModal()">Contact Info</a>
+        </li>
+      </ul>
+    </nav>
+  </header>
+
+  <main>
+    <section id="donutSection">
+      <h2>Donut Clicker</h2>
+      <p>Donuts: <span id="donutCount">0</span></p>
+      <button id="makeDonutButton" class="donut-button">
+        <img src="https://t4.ftcdn.net/jpg/01/70/68/31/360_F_170683129_J0z1iDuhHVy1YV891TpGtlOTOJWU8cFI.jpg" alt="Donut" />
+      </button>
+    </section>
+
+    <section id="autoClickerSection">
+      <h2>Auto Clicker</h2>
+      <p>Auto Clickers: <span id="autoClickerCount">0</span></p>
+      <p>Cost: <span id="autoClickerCost">100</span> donuts</p>
+      <button id="purchaseButton">Purchase Auto Clicker</button>
+    </section>
+
+    <section id="resetSection">
+      <button id="resetButton">Reset Game</button>
+    </section>
+  </main>
+
+  <div id="modal" class="modal">
+    <div class="modal-content">
+      <span class="close" onclick="closeModal()">&times;</span>
+      <h3>About Me</h3>
+      <p>I am an aspiring coder from Ohio that will done with Bootcamp in October!</p>
+      <a href="https://github.com/HunterMorrison97?tab=repositories" target="_blank">Portfolio</a>
+      <a href="https://github.com/HunterMorrison97" target="_blank">GitHub</a>
+    </div>
+  </div>
+
+  <script src="donutmaker.js"></script>
+</body>
+
+</html>
